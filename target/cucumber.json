@@ -1,0 +1,201 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7102005927,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.open_browser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Registration for d3dsecurity",
+        "description": "",
+        "id": ";registration-for-d3dsecurity",
+        "after": [
+          {
+            "result": {
+              "duration": 108620535,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9544712071,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter url \"/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/",
+                  "offset": 13
+                }
+              ],
+              "location": "register_easyjet_sd.iEnterUrl(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7352396403,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on Register button on Homepage",
+            "match": {
+              "location": "d3d_register.iClickOnRegisterButtonOnHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 192683249,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter firstname as \"Satya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Satya",
+                  "offset": 22
+                }
+              ],
+              "location": "d3d_register.iEnterFirstnameAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134760677,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter lastname as \"Chada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chada",
+                  "offset": 21
+                }
+              ],
+              "location": "d3d_register.iEnterLastnameAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 270846227,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter email as \"abc@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc@yahoo.com",
+                  "offset": 18
+                }
+              ],
+              "location": "d3d_register.iEnterEmailAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280845696,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter new password as \"satya123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "satya123",
+                  "offset": 25
+                }
+              ],
+              "location": "d3d_register.iEnterNewPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162685363,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter confirm password as \"satya123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "satya123",
+                  "offset": 29
+                }
+              ],
+              "location": "d3d_register.iEnterConfirmPasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7534291265,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on Register",
+            "match": {
+              "location": "register_easyjet_sd.iClickOnRegister()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53828700,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cUsername []not valid\u003e but was:\u003cUsername [is ]not valid\u003e\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\n\tat junit.framework.TestCase.assertEquals(TestCase.java:269)\n\tat Selenium.Training.stepdefinitions.d3d_register.iShouldSeeTheErrormessage(d3d_register.java:44)\n\tat ✽.Then I should see the Errormessage \"Username not valid\"(d3d_register.feature:12)\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I should see the Errormessage \"Username not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username not valid",
+                  "offset": 31
+                }
+              ],
+              "location": "d3d_register.iShouldSeeTheErrormessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@registration"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "d3d_register.feature"
+  }
+]
