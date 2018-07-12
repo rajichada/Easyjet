@@ -1,5 +1,6 @@
-Feature:
-@register
+Feature:All scenarios for registration for easyjet
+
+  @register
   Scenario: Registration
     Given I enter url "register"
     Given I enter MyEmailAddressIs "abc123@yahoo.com"
