@@ -1,4 +1,4 @@
-Feature:
+Feature:Registration file for D3D
 @registration
 Scenario: Registration for d3dsecurity
   Given I enter url "/"
